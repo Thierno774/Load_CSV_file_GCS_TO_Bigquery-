@@ -16,7 +16,18 @@ Pipeline Airflow automatisé pour :
 
 ## 📦 Installation
 
+## Structure de code 
+From datetime import datetime, timedelta
+from airflow import DAG
+from airflow.models import Variable
+from airflow.providers.google.cloud.operators.bigquery import (
+    BigQueryInsertJobOperator,
+    BigQueryCreateEmptyDatasetOperator
+)
+from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQueryOperator
+
 ### Prérequis
 ```bash
 gcloud components install beta
 pip install apache-airflow-providers-google==10.0.0
+
