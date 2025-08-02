@@ -130,4 +130,8 @@ with DAG(dag_id ="GSC_to_BG_and_AGG",
 ```bash
 gcloud components install beta
 pip install apache-airflow-providers-google==10.0.0
+```
+# Execution du DAG
+
+![Sparkify Data Model](/Images/airflow_dag.png)    
 
