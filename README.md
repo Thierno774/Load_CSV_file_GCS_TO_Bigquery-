@@ -1,6 +1,6 @@
  🚀 Load CSV from GCS to BigQuery - Airflow Pipeline
 
-![Airflow DAG Example](docs/images/dag_screenshot.png) *(Optionnel : ajoutez une bannière ou capture principale)*
+![Airflow DAG Example](docs/images/workflow.png)
 
 ## 📝 Description
 Pipeline Airflow automatisé pour :
