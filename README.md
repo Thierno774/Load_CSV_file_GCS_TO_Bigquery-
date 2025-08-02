@@ -135,3 +135,7 @@ pip install apache-airflow-providers-google==10.0.0
 
 ![Sparkify Data Model](/Images/airflow_dag.png)    
 
+# Resultat dans BigQuery 
+![Sparkify Data Model](/Images/bigquer_capture.png)    
+
+
