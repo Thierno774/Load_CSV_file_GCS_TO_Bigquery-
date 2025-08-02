@@ -1,5 +1,4 @@
  🚀 Load CSV from GCS to BigQuery - Airflow Pipeline
- ```python
 
 ![Airflow DAG Example](docs/images/dag_screenshot.png) *(Optionnel : ajoutez une bannière ou capture principale)*
 
@@ -18,6 +17,8 @@ Pipeline Airflow automatisé pour :
 ## 📦 Installation
 
 ## Structure de code 
+ ```python
+
 From datetime import datetime, timedelta
 from airflow import DAG
 from airflow.models import Variable
