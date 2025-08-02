@@ -17,7 +17,7 @@ Pipeline Airflow automatisé pour :
 ## 📦 Installation
 
 ## Structure de code 
-### Chargement de Packages
+1. Initialisation du DAG
  ```python
 
 import os
@@ -29,9 +29,12 @@ from airflow.contrib.operators.gcs_to_bq import GoogleCloudStorageToBigQueryOper
 
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 
+```
+2. Définition du DAG Principal
 
-1. Les arguments du DAG
 ```python
+
+
 yesterday = datetime.combine(datetime.today() - timedelta(1), datetime.min.time())
 
 default_args = {
@@ -41,7 +44,6 @@ default_args = {
     "retries": 1, 
     "retry_delay": timedelta(minutes=5)
 }
-2. Définition du DAG Principal
 # DAG definition
 with DAG(dag_id ="GSC_to_BG_and_AGG", 
         catchup = False, 
